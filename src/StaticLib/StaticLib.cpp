@@ -22,6 +22,15 @@ int sum(int num, int* array)
 // num個の整数の平均を得る
 int average(int num, int* array)
 {
-	return 0x7fffffff;// 未実装
+	int avarage = 0;
+
+	for (int i = 0; i < num; i++)
+	{
+		avarage += array[i];
+	}
+
+	avarage = avarage / num;
+
+	return avarage;
 }
 
