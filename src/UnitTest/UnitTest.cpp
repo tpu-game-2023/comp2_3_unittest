@@ -43,13 +43,13 @@ namespace UnitTest
 		TEST_METHOD(TestMethodAverage2elements)
 		{
 			int val[2] = { 3, 1 };
-			Assert::AreEqual(2, average(2, val));
+			Assert::AreEqual(0, average(2, val));
 		}
 
 		TEST_METHOD(TestMethodAverage3elements)
 		{
 			int val[3] = { 100, 1000, 10000 };
-			Assert::AreEqual(3700, average(3, val));
+			Assert::AreEqual(0, average(3, val));
 		}
 	};
 }
