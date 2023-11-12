@@ -15,6 +15,7 @@ namespace UnitTest
 		{
 			int val[1] = { 0 };
 			Assert::AreEqual(0, sum(1, val));
+
 		}
 
 		TEST_METHOD(TestMethodSum2elements)
@@ -38,18 +39,21 @@ namespace UnitTest
 		{
 			int val[1] = { 0 };
 			Assert::AreEqual(0, average(1, val));
+			
 		}
 
 		TEST_METHOD(TestMethodAverage2elements)
 		{
 			int val[2] = { 3, 1 };
 			Assert::AreEqual(2, average(2, val));
-		}
 
+		}
 		TEST_METHOD(TestMethodAverage3elements)
 		{
 			int val[3] = { 100, 1000, 10000 };
 			Assert::AreEqual(3700, average(3, val));
+			
 		}
+
 	};
 }
